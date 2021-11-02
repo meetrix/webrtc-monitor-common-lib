@@ -20,6 +20,6 @@
   "author": "",
   "license": "ISC",
   "lint-staged": {
-    "*./*": "prettier --write"
+    "*.{ts, js, json}": "prettier --write"
   }
 }
