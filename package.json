@@ -1,5 +1,5 @@
 {
-  "name": "lib-tutopiya",
+  "name": "@tutopiya/lib",
   "version": "1.0.0",
   "description": "tutopiya lib",
   "main": "./dist/index.js",
