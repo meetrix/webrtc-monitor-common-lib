@@ -7,9 +7,12 @@
   "dependencies": {
     "typescript": "^4.4.4"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "prettier": "2.4.1"
+  },
   "scripts": {
-    "test": "npm run test"
+    "format": "prettier --write ./*",
+    "build": "tsc"
   },
   "author": "",
   "license": "ISC"
