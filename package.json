@@ -1,7 +1,7 @@
 {
-  "name": "@tutopiya/lib",
+  "name": "@meetrix/webrtc-monitoring-common-lib",
   "version": "1.0.0",
-  "description": "tutopiya lib",
+  "description": "@meetrix/webrtc-monitoring-common-lib",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "dependencies": {
