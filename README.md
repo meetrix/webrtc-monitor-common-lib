@@ -1,18 +1,18 @@
-# @tutopiya/lib
+# `@meetrix/webrtc-monitoring-common-lib`
 
 This repository maintains shared utils and types across multiple projects
 
 ## Usage
 
-`npm install --save git+https://gitlab.com/tutopiya-dev/tutopiya-lib#master`
+`npm install --save git+https://gitlab.com/meetrix/products/webrtc-monitoring/webrtc-monitoring-common-lib.git#master`
 
 ```js
-import { Meta } from '@tutopiya/lib';
+import { Meta } from '@meetrix/webrtc-monitoring-common-lib';
 ```
 
 ## Development
 
-To link local `@tutopiya/lib` with any project follow these steps
+To link local `@meetrix/webrtc-monitoring-common-lib` with any project follow these steps
 
 1. In `tutopiya-lib` directory run `npm link`
-2. In `tutopiya-question-engine-frontend` run `npm link @tutopiya/lib`
+2. In `tutopiya-question-engine-frontend` run `npm link @meetrix/webrtc-monitoring-common-lib`
