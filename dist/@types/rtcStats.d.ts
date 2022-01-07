@@ -4,8 +4,7 @@ export interface MonitoringConstructorOptions {
 }
 export declare type EventTypes = 'timeline' | 'stats' | 'getUserMedia' | 'peer' | 'track' | 'connection' | 'datachannel';
 export interface Report extends TimelineEvent {
-    type: EventTypes;
-    conferenceId?: string;
+    data: StatsObjectCustom;
 }
 export declare type trackKinds = 'audio' | 'video';
 export declare type audioMimeTypes = 'audio/opus';
@@ -28,6 +27,7 @@ export interface TrackReportExtended {
     kind?: trackKinds;
     lastPacketReceivedTimestamp?: number;
     mediaType?: trackKinds;
+    mediaSourceId?: string;
     mimeType?: audioMimeTypes;
     packetRate?: number;
     packetsDiscarded?: number;
@@ -83,4 +83,11 @@ export interface StatsObjectCustom {
 }
 export interface Peer extends StatsObjectCustom {
     peerId: string;
+}
+export interface CandidateType {
+    type: 'local' | 'remote';
+    candidateType: 'host' | 'srflx' | 'prflx' | 'relay';
+    ip: string;
+    port: number;
+    protocol: 'tcp' | 'udp';
 }
