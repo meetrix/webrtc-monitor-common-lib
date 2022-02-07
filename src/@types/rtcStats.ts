@@ -15,26 +15,26 @@ export interface Report extends TimelineEvent {
   // type: EventTypes;
   // conferenceId?: string;
   event: string;
-  peerId?: string;
+  peerId: string;
   tag: TimelineTag;
-  data?: StatsObjectCustom;
-  timestamp?: any;
+  data: StatsObjectCustom;
+  timestamp: any;
 }
 
 export interface Connection extends TimelineEvent {
   event: string;
-  peerId?: string;
+  peerId: string;
   tag: TimelineTag;
-  data?: any;
-  timestamp?: any;
+  data: any;
+  timestamp: any;
 }
 
 export interface Other extends TimelineEvent {
   event: string;
-  peerId?: string;
+  peerId: string;
   tag: TimelineTag;
-  data?: any;
-  timestamp?: any;
+  data: any;
+  timestamp: any;
 }
 
 export type trackKinds = 'audio' | 'video';

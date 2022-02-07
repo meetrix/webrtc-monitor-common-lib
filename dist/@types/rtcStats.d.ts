@@ -5,24 +5,24 @@ export interface MonitoringConstructorOptions {
 export declare type EventTypes = 'timeline' | 'stats' | 'getUserMedia' | 'peer' | 'track' | 'connection' | 'datachannel';
 export interface Report extends TimelineEvent {
     event: string;
-    peerId?: string;
+    peerId: string;
     tag: TimelineTag;
-    data?: StatsObjectCustom;
-    timestamp?: any;
+    data: StatsObjectCustom;
+    timestamp: any;
 }
 export interface Connection extends TimelineEvent {
     event: string;
-    peerId?: string;
+    peerId: string;
     tag: TimelineTag;
-    data?: any;
-    timestamp?: any;
+    data: any;
+    timestamp: any;
 }
 export interface Other extends TimelineEvent {
     event: string;
-    peerId?: string;
+    peerId: string;
     tag: TimelineTag;
-    data?: any;
-    timestamp?: any;
+    data: any;
+    timestamp: any;
 }
 export declare type trackKinds = 'audio' | 'video';
 export declare type audioMimeTypes = 'audio/opus';
