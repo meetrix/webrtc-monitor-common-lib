@@ -1,4 +1,4 @@
-import { TimelineEvent } from '@peermetrics/webrtc-stats';
+import { TimelineEvent, TimelineTag } from '@peermetrics/webrtc-stats';
 export interface MonitoringConstructorOptions {
   backendUrl: string;
 }
@@ -14,7 +14,27 @@ export type EventTypes =
 export interface Report extends TimelineEvent {
   // type: EventTypes;
   // conferenceId?: string;
+  event: string;
+  peerId: string;
+  tag: TimelineTag;
   data: StatsObjectCustom;
+  timestamp: Date;
+}
+
+export interface Connection extends TimelineEvent {
+  event: string;
+  peerId: string;
+  tag: TimelineTag;
+  data: any;
+  timestamp: Date;
+}
+
+export interface Other extends TimelineEvent {
+  event: string;
+  peerId: string;
+  tag: TimelineTag;
+  data: any;
+  timestamp: Date;
 }
 
 export type trackKinds = 'audio' | 'video';
@@ -89,11 +109,17 @@ export interface ConnectionReport {
   type: 'candidate-pair';
   writable: true;
 }
+export interface BrowserInfo {
+  userAgent: string;
+  platform: string;
+}
 
 export interface StatsObjectCustom {
   inbound: TrackReportExtended[];
   outbound: TrackReportExtended[];
   connection: ConnectionReport;
+  browserInfo: BrowserInfo;
+  mediaDeviceInfo: MediaDeviceInfo[];
 }
 
 export interface Peer extends StatsObjectCustom {
