@@ -18,7 +18,7 @@ export interface Report extends TimelineEvent {
   peerId: string;
   tag: TimelineTag;
   data: StatsObjectCustom;
-  timestamp: Date;
+  timestamp: any;
 }
 
 export interface Connection extends TimelineEvent {
@@ -26,7 +26,7 @@ export interface Connection extends TimelineEvent {
   peerId: string;
   tag: TimelineTag;
   data: any;
-  timestamp: Date;
+  timestamp: any;
 }
 
 export interface Other extends TimelineEvent {
@@ -34,7 +34,7 @@ export interface Other extends TimelineEvent {
   peerId: string;
   tag: TimelineTag;
   data: any;
-  timestamp: Date;
+  timestamp: any;
 }
 
 export type trackKinds = 'audio' | 'video';
