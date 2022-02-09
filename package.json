@@ -5,10 +5,10 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "dependencies": {
-    "typescript": "^4.4.4",
-    "@peermetrics/webrtc-stats": "github:buddhikajay/webrtc-stats"
+    "typescript": "^4.4.4"
   },
   "devDependencies": {
+    "@peermetrics/webrtc-stats": "github:buddhikajay/webrtc-stats",
     "@types/node": "^17.0.5",
     "husky": "^7.0.4",
     "lint-staged": "^11.2.6",
