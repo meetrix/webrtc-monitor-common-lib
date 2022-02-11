@@ -1,21 +1,4 @@
-export declare type TimelineTag =
-  | 'getUserMedia'
-  | 'peer'
-  | 'connection'
-  | 'track'
-  | 'datachannel'
-  | 'stats';
-export interface TimelineEvent {
-  event: string;
-  tag: TimelineTag;
-  timestamp?: Date;
-  data?: any;
-  peerId?: string;
-  error?: any;
-  rawStats?: RTCStatsReport;
-  statsObject?: any;
-  filteredStats?: any;
-}
+import { TimelineEvent, TimelineTag } from '@peermetrics/webrtc-stats';
 export interface MonitoringConstructorOptions {
   backendUrl: string;
 }
