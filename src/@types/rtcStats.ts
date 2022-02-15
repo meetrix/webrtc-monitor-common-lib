@@ -21,22 +21,6 @@ export interface Report extends TimelineEvent {
   timestamp: any;
 }
 
-export interface Connection extends TimelineEvent {
-  event: string;
-  peerId: string;
-  tag: TimelineTag;
-  data: any;
-  timestamp: any;
-}
-
-export interface Other extends TimelineEvent {
-  event: string;
-  peerId: string;
-  tag: TimelineTag;
-  data: any;
-  timestamp: any;
-}
-
 export type trackKinds = 'audio' | 'video';
 export type audioMimeTypes = 'audio/opus';
 

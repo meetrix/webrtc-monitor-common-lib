@@ -10,20 +10,6 @@ export interface Report extends TimelineEvent {
     data: StatsObjectCustom;
     timestamp: any;
 }
-export interface Connection extends TimelineEvent {
-    event: string;
-    peerId: string;
-    tag: TimelineTag;
-    data: any;
-    timestamp: any;
-}
-export interface Other extends TimelineEvent {
-    event: string;
-    peerId: string;
-    tag: TimelineTag;
-    data: any;
-    timestamp: any;
-}
 export declare type trackKinds = 'audio' | 'video';
 export declare type audioMimeTypes = 'audio/opus';
 export interface TrackReportExtended {
