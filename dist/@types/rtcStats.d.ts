@@ -88,8 +88,6 @@ export interface StatsObjectCustom {
     inbound: TrackReportExtended[];
     outbound: TrackReportExtended[];
     connection: ConnectionReport;
-    browserInfo: BrowserInfo;
-    mediaDeviceInfo: MediaDeviceInfo[];
 }
 export interface Peer extends StatsObjectCustom {
     peerId: string;
