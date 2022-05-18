@@ -1,4 +1,5 @@
 import { TimelineEvent } from '@peermetrics/webrtc-stats';
+
 export interface MonitoringConstructorOptions {
     backendUrl: string;
 }
@@ -76,10 +77,19 @@ export interface ConnectionReport {
     type: 'candidate-pair';
     writable: true;
 }
+
+export interface BasicInformation {
+    clientId: string;
+    os: string;
+    browser: string;
+    browserVersion: string;
+    connectedAt: string;
+}
 export interface StatsObjectCustom {
     inbound: TrackReportExtended[];
     outbound: TrackReportExtended[];
     connection: ConnectionReport;
+    basicInformation: BasicInformation;
 }
 export interface Peer extends StatsObjectCustom {
     peerId: string;
