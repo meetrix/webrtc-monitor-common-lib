@@ -102,6 +102,7 @@ export interface StatsObjectCustom {
   inbound: TrackReportExtended[];
   outbound: TrackReportExtended[];
   connection: ConnectionReport;
+  basicInformation?: any;
 }
 
 export interface Peer extends StatsObjectCustom {
