@@ -4,9 +4,6 @@
   "description": "@meetrix/webrtc-monitoring-common-lib",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
   "dependencies": {
     "typescript": "^4.4.4",
     "@peermetrics/webrtc-stats": "git+https://github.com/buddhikajay/webrtc-stats.git"
@@ -23,7 +20,9 @@
     "start": "tsc --watch",
     "format": "prettier --write ./*",
     "build": "tsc",
-    "prepare": "husky install"
+    "prepublishOnly": "husky install && npm run build",
+    "prepare": "husky install && npm run build",
+    "pretest": "husky install && npm run build"
   },
   "author": "",
   "license": "ISC",
