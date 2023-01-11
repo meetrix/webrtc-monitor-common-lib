@@ -4,9 +4,6 @@
   "description": "@meetrix/webrtc-monitoring-common-lib",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
   "dependencies": {
     "typescript": "^4.4.4",
     "@peermetrics/webrtc-stats": "git+https://github.com/buddhikajay/webrtc-stats.git"
