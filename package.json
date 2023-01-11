@@ -20,7 +20,7 @@
     "start": "tsc --watch",
     "format": "prettier --write ./*",
     "build": "tsc",
-    "prepare": "husky install"
+    "prepare": "husky install && npm run build"
   },
   "author": "",
   "license": "ISC",
