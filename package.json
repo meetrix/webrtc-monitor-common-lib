@@ -20,7 +20,9 @@
     "start": "tsc --watch",
     "format": "prettier --write ./*",
     "build": "tsc",
-    "prepare": "npm run build"
+    "prepublishOnly": "npm run build",
+    "prepare": "npm run build",
+    "pretest": "npm run build",
   },
   "author": "",
   "license": "ISC",
