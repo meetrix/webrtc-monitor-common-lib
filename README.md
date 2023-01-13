@@ -2,6 +2,19 @@
 
 This repository maintains shared utils and types across multiple projects
 
+## Project can be run on following OS
+
+1. Ubuntu
+2. MacOS
+3. Windows
+
+## Prerequisites
+
+The following pre-requisites should be setup through your terminal on your development machine. Please refer to tool installation guides by the developers to set these up. 
+
+1. Git
+2. Node 12
+
 ## Usage
 
 1. insert webrtc-monitoring-common-lib to dependencies array
